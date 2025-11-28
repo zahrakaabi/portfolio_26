@@ -2,6 +2,7 @@
 /*                    DEPENDENCIES                  */
 /* ------------------------------------------------ */
 // UI Local Components
+import { HeroSection } from "@/componets";
 
 /* ------------------------------------------------ */
 /*                     COMPONENT                    */
@@ -10,7 +11,7 @@ function Home() {
   /* ***************** RENDERING ****************** */
   return (
     <>
-      <h1>Hello Portfolio</h1>
+      <HeroSection />
     </>
   );
 };

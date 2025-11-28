@@ -1,0 +1,88 @@
+@use '../../../shared/styles/styles.mixins.scss' as mix;
+@use '../../../shared/styles/styles.variables.scss' as vars;
+
+.heroContainer {
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+
+    .heroContent {
+        @media (max-width: 772px) {
+            gap: 1.5rem;
+        }
+
+        .heroGreeting {
+            width: 6rem;
+            height: 6rem;
+            position: relative
+        }
+
+        span {
+            font-size: 2rem;
+            font-weight: 400;
+            @include mix.fontStylePrimary;
+        }
+
+        .heroText {
+            span {
+                font-size: 6vw;
+                font-weight: bold;
+                line-height: 0.9;
+                @include mix.fontStylePrimary;
+
+                &.indent {
+                    padding-left: 7vw;
+                    display: inline-block;
+                }
+
+                @media (max-width: 772px) {
+                    font-size: 11vw;
+                }
+
+                .ctaBtns {
+                    button {
+                        margin-left: 1.2rem;
+        
+                        &.ctaPrimary {
+                            width: 15rem;
+                            height: 15rem;
+                            border-radius: 50%;
+                            color: vars.$theme-light-clr;
+                            background: vars.$btn-bg-clr;
+        
+                            span {
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                @include mix.fontStylePrimary;
+                                line-height: 1.5
+                            }
+                        }
+        
+                        &.ctaSecondary {
+                            font-size: 2rem;
+                            font-weight: 400;
+                            @include mix.fontStylePrimary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .scrollDown {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 2rem;
+        
+        h6 {
+            opacity: 0.6;
+            letter-spacing: 0.1rem;
+            font: normal 400 1.6rem sans-serif;
+
+            span {
+                color: vars.$color-text;
+            }
+        }
+    }
+}
