@@ -1,0 +1,79 @@
+@use '../../../shared/styles/styles.mixins.scss' as mix;
+
+.aboutMeContainer {
+    margin-block: 8rem;
+
+    @media (min-width: 1024px) {
+        margin-block: 13%;
+    }
+
+    .aboutMeContent {
+        $__columns: 6;
+        $__grid-padding: 1.6rem;
+        $__gutter: 0.8rem;
+        $__grid-padding: 2.4rem;
+
+        display: grid;
+        grid-template-columns: [content-width-start] repeat($__columns, minmax(0, 1fr)) [content-width-end];
+        grid-column-gap: $__gutter;
+        column-gap: $__gutter;
+
+        @media (min-width: 768px) {
+            $__columns: 8;
+        }
+
+        @media (min-width: 1024px) {
+            $__columns: 12;
+            $__gutter: 1.6rem;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 3.3rem;
+            line-height: 1.1;
+            grid-column: 1 / 6;
+            @include mix.fontStylePrimary;
+
+            @media (min-width: 1024px) {
+                grid-column: 1 / 4;
+                max-width: 25ch;
+            }
+        }
+
+        .description {
+            margin-top: 2rem;
+            grid-column: content-width;
+
+            @media (min-width: 1024px) {
+                grid-column: 4 / 12;
+                justify-self: flex-end;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.8rem;
+                line-height: 1.5;
+                @include mix.fontStylePrimary;
+                gap: .8rem;
+    
+                @media (min-width: 1024px) {
+                    max-width: 52ch;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 4rem;
+
+                    @media (max-width: 1024px) {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .mask{
+                    margin-right: .5rem;
+                    overflow: hidden;
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+}
