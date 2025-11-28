@@ -1,0 +1,28 @@
+// Styles
+@use '../../../shared/styles/styles.mixins.scss' as mix;
+
+// CTA Button style
+.ctaBtn {
+    outline: none;
+    border-radius: 10rem;
+    padding: 2.3rem 4.5rem;
+    border: 0.1rem solid #b8b8b8;
+    background: transparent;
+    cursor: pointer;
+    font: normal 400 1.8rem sans-serif;
+    transition: .7s ease;
+    text-transform: capitalize;
+
+    &:hover,
+    &.active {
+        border-color: transparent;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    &.active {
+        background: black;
+    }
+}

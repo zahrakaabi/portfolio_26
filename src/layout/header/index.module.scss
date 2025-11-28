@@ -1,0 +1,83 @@
+@use '../../shared/styles/styles.mixins.scss' as mix;
+
+.headerContainer {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding-block: 1.5rem;
+    background: transparent;
+    min-height: 5rem; 
+    z-index: 9999999999;
+
+    a h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        @include mix.fontStylePrimary;
+    }
+
+    .links {
+        a {
+            &:not(:last-child) {
+                margin-right: 3rem;
+
+                @media (max-width: 720px) {
+                    margin-right: 1.5rem;
+                }
+
+                h6::after {
+                    position: absolute;
+                    bottom: -25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: #333;
+
+                    opacity: 0;
+                    transition: 0.4s ease;
+                }
+
+                &:hover {
+                    h6::after {
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            &:last-child {
+                h6 {
+                    &::after {
+                        content: '';
+                        left: 0;
+                        width: 0;
+                        bottom: -0.5rem;
+                        height: 0.1rem;
+                        background-color: #333;
+                        position: absolute;
+                        transition: 0.7s ease;
+                    }
+                }
+
+                &:hover {
+                    h6::after {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            h6 {
+                font-weight: 400;  
+                font-size: 2rem;
+                position: relative;
+                @include mix.fontStylePrimary;
+
+                @media (max-width: 380px) { 
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

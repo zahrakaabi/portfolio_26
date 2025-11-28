@@ -1,0 +1,12 @@
+@use '../../styles/styles.mixins.scss' as mix;
+@use '../../styles/styles.variables.scss' as vars;
+
+.sectionTitle {
+    margin-bottom: 2rem;
+
+    h6 {
+        opacity: .6;
+        color: vars.$section-title-clr;
+        font: normal 400 2rem sans-serif;
+    }
+}

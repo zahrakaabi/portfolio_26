@@ -1,0 +1,13 @@
+@use './styles.variables.scss' as *;
+
+@mixin fontStylePrimary {
+    font-style: normal;
+    font-family: $ff-primary;
+}
+
+@mixin fontStyleSecondary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: $ff-primary;
+}
