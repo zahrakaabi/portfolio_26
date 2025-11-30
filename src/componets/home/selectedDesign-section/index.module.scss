@@ -1,7 +1,8 @@
 .services {
-    margin-block: 10% 11rem;
+    margin-block: 10% 11rem !important;
     
     display: grid;
+    place-items: center;
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -43,6 +44,13 @@
                 font: normal 400 1.6rem sans-serif;
                 line-height: 1.5;
             }
+        }
+    }
+
+    .imgContainer {
+        img {
+            width: 100% !important;
+            height: auto !important;
         }
     }
 }

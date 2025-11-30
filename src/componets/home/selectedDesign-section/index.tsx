@@ -19,8 +19,8 @@ import styles from './index.module.scss';
 function SelectedDesignSection() {
 /* -------------------------------- RENDERING ------------------------------- */
   return (
-    <section className={`${styles.services} flex items-center pos-r container`}>
-        <div className={`${styles.descp}`}>
+    <section className={`${styles.services} pos-r container`}>
+        <div className={`${styles.descp} w-screen`}>
             <SectionTitle sectionTitle='UI Services' />
             <div className={styles.content}>
                 <div className={styles.btn}>
@@ -39,11 +39,12 @@ function SelectedDesignSection() {
                 </div>
             </div>
         </div>
-        <div className="w-screen h-screen pos-r">
-            <Image className="w-screen h-auto object-contain" 
+        <div className={`${styles.imgContainer} w-screen pos-r`}>
+            <Image className="img object-contain" 
                 src='/assets/images/home/selectedDesign-section/beauty.gif' 
                 alt='ui design of a beauty store (e-commerce)'
-                fill
+                width={500}
+                height={500}
             />
         </div>
     </section>
