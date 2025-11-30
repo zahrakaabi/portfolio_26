@@ -1,0 +1,20 @@
+// Styles
+@use '../../../shared/styles/styles.mixins.scss' as mix;
+@use '../../../shared/styles/styles.variables.scss' as vars;
+
+// Selected work section style
+.selectedWorkContainer {
+    margin-bottom: 7%;
+
+    .homeWorkGrid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vw;
+
+        @media (max-width: 772px) {
+            gap: 3rem;
+            grid-template-columns: 1fr;
+        }
+    }
+}

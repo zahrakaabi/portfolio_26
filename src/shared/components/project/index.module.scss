@@ -1,0 +1,63 @@
+@use '../../styles/styles.variables.scss' as vars;
+
+.project {
+    width: 100%;
+
+    .imgContainer {
+        aspect-ratio: 1/1;
+
+        img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .magneticContainer {
+            position: relative;
+            z-index: 1;
+
+            width: 80%;
+            height: 80%;
+            border: none;
+            background: transparent;
+
+            .arrow {
+                width: 7rem;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                background: #fff;
+
+                color: #333;
+                font: normal 400 3rem sans-serif;
+            }
+        }
+    }
+
+    .contentContainer {
+        margin-top: 1rem;
+        
+        h3 {
+            text-transform: uppercase;
+            font: normal 500 3rem Verdana, Geneva, Tahoma, sans-serif;
+
+            @media (max-width: 772px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        p {
+            letter-spacing: 1.2;
+            font: italic 500 1.8rem serif;
+
+            @media (max-width: 772px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
