@@ -2,7 +2,12 @@
 /*                    DEPENDENCIES                  */
 /* ------------------------------------------------ */
 // UI Local Components
-import { AboutMeSection, HeroSection, SelectedWorkSection } from "@/componets";
+import { 
+  AboutMeSection, 
+  HeroSection, 
+  SelectedDesignSection, 
+  SelectedWorkSection 
+} from "@/componets";
 
 /* ------------------------------------------------ */
 /*                     COMPONENT                    */
@@ -14,6 +19,7 @@ function Home() {
       <HeroSection />
       <AboutMeSection />
       <SelectedWorkSection />
+      <SelectedDesignSection />
     </>
   );
 };

@@ -1,0 +1,53 @@
+.services {
+    margin-block: 10% 11rem;
+    
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+
+    @media (max-width: 772px) {
+        grid-template-columns: 1fr;
+    }
+
+    .descp {
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .btn {
+                width: fit-content;
+                position: relative;
+                margin-block: 2rem 3rem;
+
+                .circleText {
+                    width: 12rem;
+                    height: 12rem;
+                    animation: infinite-rotate 15s linear infinite;
+                }
+    
+                h2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: rgb(143, 143, 143);
+                    transform: translate(-45%, -55%) rotate(-10deg);
+                    font: normal 700 4rem sans-serif;
+                }
+            }
+
+            p {
+                margin-bottom: 3rem;
+                font: normal 400 1.6rem sans-serif;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@keyframes infinite-rotate {
+    from { transform: rotate(0) }
+    to { transform: rotate(360deg) }
+}
