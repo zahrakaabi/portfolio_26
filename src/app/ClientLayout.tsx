@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 
 // UI Local Components
 import NavBar from '@/layout/header';
-//import About from '@/components/about-page-components';
+import { About } from '@/componets';
 import Footer from '@/layout/footer';
 
 // _Mocks
@@ -17,7 +17,7 @@ import { MOOD_OPTIONS } from '@/_mocks';
 
 // Styles
 import '@/shared/styles/styles.globals.scss';
-//import styles from '@/components/about-page-components/index.module.scss';
+import styles from '@/componets/about/index.module.scss'
 
 /* -------------------------------------------------------------------------- */
 /*                           CLIENT LAYOUT COMPONENT                          */
@@ -44,7 +44,7 @@ function ClientLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const isAboutPage = pathname === '/about';
   const isContactPage = pathname === '/contact';
 
-  /*const handleMood = () => {
+  const handleMood = () => {
     const imageContainer = document.querySelector(`.${styles.imageContainer}`);
     if (!imageContainer) return;
 
@@ -53,7 +53,7 @@ function ClientLayout({ children }: Readonly<{ children: React.ReactNode }>) {
       setMoodIndex((prev) => prev < MOOD_OPTIONS.length - 1 ? prev + 1 : 0);
       imageContainer.classList.remove('fade-out');
     }, 500);
-  };*/
+  };
 
   const mood = MOOD_OPTIONS[moodIndex];
 
@@ -65,7 +65,9 @@ function ClientLayout({ children }: Readonly<{ children: React.ReactNode }>) {
         isContactPage={isContactPage}
         mood={mood}
       />
-      {children}
+      <main>
+        {isAboutPage ? <About handleMood={handleMood} mood={mood} /> : children}
+      </main>
       <Footer />
     </>
   );

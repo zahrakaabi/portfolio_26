@@ -1,0 +1,151 @@
+.headerContainer {
+    transition: background-color 0.5s ease-in, color 0.5s ease-in-out;
+};
+
+.aboutPage {
+    padding-top: 8rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    .changeMood {
+        padding: 0.5rem 1.5rem;
+        border-radius: 5rem;
+        border-width: 0.1em;
+        border-style: solid;
+        background: transparent;
+        margin-top: 4%;
+        cursor: pointer;
+        font: normal 400 1.5rem / 1 roboto;
+        animation: pulse 1.5s infinite;
+
+        @media (max-width: 720px) {
+            margin-top: 3rem;
+        }
+    }
+
+    .heading {
+        margin: 3% auto; 
+        font: normal 700 5vw/1 roboto;
+        width: 20ch;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            font-size: 9vw;
+            margin: 2rem auto;
+        }
+    }
+
+    .sayingHello {
+        p { 
+            width: fit-content;
+            font: normal 400 1.8rem / 1.2 roboto;
+
+            span {
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 0 0.5em 0.2em 0
+            }
+        }
+
+        .imageContainer {
+            opacity: 1;
+            width: 32rem;
+            height: 100%;
+            overflow: hidden;
+            transition: opacity 0.5s ease-in-out;
+        
+            @media (max-width: 480px) {
+                width: 100%
+            }
+        
+            &.fade-out {
+                opacity: 0;
+            }
+        
+            img {
+                width: 100%;
+                height: 45rem;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+
+    p {
+        width: 70ch;
+        margin-top: 3%;
+        font: normal 400 1.6rem / 1.5 roboto;
+
+        @media (max-width: 720px) {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .packageWrapper {
+        margin: 10% auto 15% auto;
+
+        h2 {
+            font-weight: 400;
+            font: normal 400 4.8rem / 1 roboto;
+        }
+
+        .packageContainer {
+            $__gap: 3%;
+
+            gap: $__gap;
+
+            .package {
+                flex: 1;
+                margin-top: 6rem;
+
+                @media (max-width: 820px) {
+                    flex: unset;
+                    width: 100%;
+                }
+
+                div {
+                    padding-bottom: 2.4rem;
+                    border-bottom-width: 0.1em;
+                    border-bottom-style: solid;
+                    opacity: 0.5;
+                    font: normal 400 1.2rem / 1 roboto;
+
+                    @media (max-width: 720px) {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                h3 {
+                    padding: 4rem 0;
+                    font: normal 400 2.9rem / 1 roboto;
+
+                    @media (max-width: 720px) {
+                        padding: 1.5rem 0;
+                    }
+                }
+
+                p {
+                    width: 42ch;
+                    font: normal 400 1.6rem / 1.5 roboto;
+
+                    @media (max-width: 1440px) {
+                        width: 100%;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
