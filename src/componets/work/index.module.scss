@@ -1,0 +1,31 @@
+.workPage {
+    padding-block: 10rem;
+
+    .workPageTitle {
+        margin-bottom: 4%;
+        font: normal 400 7vw sans-serif; 
+
+        @media (min-width: 1024px) {
+            max-width: 80%;
+        }
+    }
+
+    button {
+        @media (max-width: 772px) {
+            padding-block: 1.5rem;
+        }
+    }
+
+    .projects {
+        margin-top: 8%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vw;
+
+        @media (max-width: 772px) {
+            gap: 3rem;
+            grid-template-columns: 1fr;
+        }
+    }
+}

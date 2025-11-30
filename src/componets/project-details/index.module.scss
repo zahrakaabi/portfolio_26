@@ -1,0 +1,106 @@
+@use '../../shared/styles/styles.variables.scss' as vars;
+@use '../../shared/styles/styles.mixins.scss' as mix;
+
+.projectDetailsContainer {
+    padding-top: calc(5% + 7rem);
+    margin-bottom: 10%;
+
+    .projectdetails {
+        margin-bottom: 4%;
+
+        h1 {
+            margin-bottom: 4%;
+            font: normal 400 7vw sans-serif; 
+        }
+    
+        p {
+            max-width: 80ch;
+            padding-left: 2%;
+            font: normal 400 1.6rem sans-serif; 
+            line-height: 1.5;
+        }
+
+        .viewWrapper {
+            display: flex;
+            justify-content: right;
+            padding-right: 7%;
+
+            button {
+                width: 16rem;
+                height: 16rem;
+                padding-inline: 3rem;
+                border: none;
+                border-radius: 50%;
+                background: #333;
+                cursor: pointer;
+
+                span {
+                    color: #fff;
+                    font: normal 400 1.6rem sans-serif;
+
+                    &.arrow {
+                        font-size: 3rem !important;
+                    }
+                } 
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+                background-color:hsl(0, 0, 20%, 20%);
+                
+                z-index: -1;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .button {
+            width: fit-content;
+            height: fit-content;
+            /*position: absolute;
+            right: 9%;
+            top: -8rem;*/
+
+            
+        }
+
+        img {
+            height: auto;
+            margin-top: 3%;
+        }
+    }
+
+    .projectPlayer {
+        width: 100%;
+        position: relative;
+
+        .deviceImg {
+            display: block;
+            max-height: 75rem; //58
+        }
+
+        .videoWrapper {
+            position: absolute;
+            top: .1rem;
+            left: 5.7%;
+            width: 88.6% !important;
+            height: 93% !important;
+            z-index: 1;
+            overflow: hidden;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.8rem 1.8rem 0 0;
+            }
+        }
+    }
+
+    .projectImg {
+        height: auto;
+    }
+}
