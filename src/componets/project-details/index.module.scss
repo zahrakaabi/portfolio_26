@@ -24,15 +24,24 @@
             display: flex;
             justify-content: right;
             padding-right: 7%;
+            position: relative;
+
+            @media (max-width: 720px) {
+                margin: 10% 0 15% 0;
+            }
 
             button {
                 width: 16rem;
-                height: 16rem;
+                aspect-ratio: 1/1;
                 padding-inline: 3rem;
                 border: none;
                 border-radius: 50%;
                 background: #333;
                 cursor: pointer;
+
+                @media (max-width: 512px) {
+                    width: 10rem;
+                }
 
                 span {
                     color: #fff;
@@ -55,16 +64,6 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
-        }
-
-        .button {
-            width: fit-content;
-            height: fit-content;
-            /*position: absolute;
-            right: 9%;
-            top: -8rem;*/
-
-            
         }
 
         img {
@@ -94,7 +93,7 @@
             video {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: fill;
                 border-radius: 1.8rem 1.8rem 0 0;
             }
         }

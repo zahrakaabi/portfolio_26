@@ -37,8 +37,8 @@ function Work() {
     if (lower === 'all') return projects;
     if (lower === 'design')
       return projects.filter((p) => p.details.toLowerCase().includes('design'));
-    if (lower === 'development' || lower.includes('build'))
-      return projects.filter((p) => p.details.toLowerCase().includes('development'));
+    if (lower === 'development')
+      return projects.filter((p) => p.details.toLowerCase().includes('development') || p.details.toLowerCase().includes('build'));
     return projects;
   }, [selectedFilter]);
 
