@@ -16,7 +16,7 @@ export type ProjectType = {
   details: string,
   src: string,
   color: string,
-  techs: string,
+  techs: string[],
   description: string,
   video?: string
 };

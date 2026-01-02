@@ -19,20 +19,43 @@ export const projects: ProjectType[] = [
         details: "Design & Build",
         src:"https://github.com/zahrakaabi/thunderous",
         color: "#333",
-        techs: "React JS | SCSS",
+        techs: ["React" , "SCSS"],
         description: "This beauty e-commerce platform offers a seamless shopping experience for makeup, skincare, and perfume products. Built with React and powered by React Query for efficient data fetching, the site supports language switching between French and English. It features a dynamic product catalog with filtering, real-time search, a cart and checkout flow."
     },
     {
-        $id: "09",
-        title_1: "Pomo",
-        title_2: "doro",
-        image: "pomodoro.png",
-        video: 'pomodoro.mp4',
+        $id: "07",
+        title_1: "Custom product de",
+        title_2: "tails",
+        image: 'screen-capture-4.gif',
         details: "Development",
-        src:"https://zkpomodoro.netlify.app/",
+        src:"https://github.com/zahrakaabi/CUSTOM_PRODUCTS_AUTO_SLIDER",
         color: "#e9eaec",
-        techs: "React Js | Local Storage",
-        description: 'This Pomodoro timer website is built as a Progressive Web App (PWA), allowing users to install it on their devices for an app-like experience via "Add to Home Screen." It offers a customizable focus session with the ability to choose between three fonts, three color themes, and set custom durations for Pomodoro, short break, and long break sessions. User preferences are saved using local storage, ensuring a personalized and consistent experience across visits.'
+        techs: ["Vanilla Javascript", "Html", "CSS"],
+        description: "A custom component that features a custom-built auto slider that showcases multiple products in an interactive carousel. It automatically transitions between images. This component highlights product visuals effectively, enhancing the overall presentation and helping users explore items in more detail."
+    },
+    {
+        $id: "03",
+        title_1: "Movie",
+        title_2: "hype",
+        image: "moviehype.png",
+        video: 'video1.mp4',
+        details: "Design & Build",
+        src:"https://github.com/zahrakaabi13/Movie-application-usig-react-js",
+        color: "#d8d3cd",
+        techs: ["React", "Node Js"],
+        description: "This movie app, fully designed and developed using React.js and Node.js, offers a seamless experience to browse, search, and manage movies. Users can easily search for movies, add or remove them from their favorites, and access a personalized dashboard with full CRUD (Create, Read, Update, Delete) capabilities for managing movie entries."
+    },
+    {
+        $id: "zitouna",
+        title_1: "Zitou",
+        title_2: "na",
+        image: "zitouna_bank.png",
+        video: '',
+        details: "UI Design",
+        src: "",
+        color: "#e9eaec",
+        techs: ["Figma"],
+        description: "This project is a redesign concept for Zitouna Bank's website, created using Figma. The design focuses on enhancing user experience and modernizing the interface while maintaining the bank's brand identity. It includes intuitive navigation, a clean layout, and visually appealing elements to improve overall usability."
     },
     /*{
         $id: "02",
@@ -43,32 +66,9 @@ export const projects: ProjectType[] = [
         details: "Development",
         src:"https://github.com/zahrakaabi/BOHO-shopping-cart",
         color: "#e9eaec",
-        techs: "Vanilla Javascript | Html | CSS",
+        techs: ["Vanilla Javascript", "Html", "CSS"],
         description: "An e-commerce website developed using Vanilla JavaScript, HTML, and SCSS, allows users to explore a variety of beautifully arranged floral products, view detailed descriptions, and complete purchases through a smooth and intuitive interface. After completing a checkout, customers have the option to download a PDF receipt of their order, enhancing the overall shopping experience with a touch of professionalism."
     },*/
-    {
-        $id: "03",
-        title_1: "Movie",
-        title_2: "hype",
-        image: "moviehype.png",
-        video: 'video1.mp4',
-        details: "Design & Build",
-        src:"https://github.com/zahrakaabi13/Movie-application-usig-react-js",
-        color: "#d8d3cd",
-        techs: "React JS | Node Js",
-        description: "This movie app, fully designed and developed using React.js and Node.js, offers a seamless experience to browse, search, and manage movies. Users can easily search for movies, add or remove them from their favorites, and access a personalized dashboard with full CRUD (Create, Read, Update, Delete) capabilities for managing movie entries."
-    },
-    {
-        $id: "07",
-        title_1: "Custom product de",
-        title_2: "tails",
-        image: 'screen-capture-4.gif',
-        details: "Development",
-        src:"https://github.com/zahrakaabi/CUSTOM_PRODUCTS_AUTO_SLIDER",
-        color: "#e9eaec",
-        techs: "Vanilla Javascript | Html | CSS",
-        description: "A custom component that features a custom-built auto slider that showcases multiple products in an interactive carousel. It automatically transitions between images. This component highlights product visuals effectively, enhancing the overall presentation and helping users explore items in more detail."
-    },
     /*{
         $id: "04",
         title_1: "Obse",
@@ -78,9 +78,21 @@ export const projects: ProjectType[] = [
         details: "Design & Build",
         src:"https://github.com/zahrakaabi13/Chef-d-oeuvre",
         color: "#b1a994",
-        techs: "React JS | Node Js",
+        techs: ["React", "Node Js"],
         description: "A printed hoodie e-commerce website was fully designed and developed to offer a smooth shopping experience. Built React Js and Node Js, it allows users to browse a variety of hoodie designs, view detailed product pages, and complete purchases."
     },*/
+    {
+        $id: "09",
+        title_1: "Pomo",
+        title_2: "doro",
+        image: "pomodoro.png",
+        video: 'pomodoro.mp4',
+        details: "Development",
+        src:"https://zkpomodoro.netlify.app/",
+        color: "#e9eaec",
+        techs: ["React", "Local storage"],
+        description: 'This Pomodoro timer website is built as a Progressive Web App (PWA), allowing users to install it on their devices for an app-like experience via "Add to Home Screen." It offers a customizable focus session with the ability to choose between three fonts, three color themes, and set custom durations for Pomodoro, short break, and long break sessions. User preferences are saved using local storage, ensuring a personalized and consistent experience across visits.'
+    },
     {
         $id: "06",
         title_1: "Youtube",
@@ -90,7 +102,7 @@ export const projects: ProjectType[] = [
         details: "Development",
         src:"https://github.com/zahrakaabi/YOUTUBE_CLONE",
         color: "#b1a994",
-        techs: "React Js | Material UI | Rapid API",
+        techs: ["React", "Material UI", "Rapid API"],
         description: "This project is a video streaming platform built with React, Material UI and RapidApi, offering core functionalities such as video playback, search, channel browsing, comments, and recommendations. It features responsive design for optimal viewing across devices, dynamic routing for video and channel pages. Users can enjoy a smooth, intuitive UI that closely mirrors the YouTube experience."
     },
     /*{
@@ -114,7 +126,7 @@ export const projects: ProjectType[] = [
         details: "Development",
         src:"https://github.com/",
         color: "#e9eaec",
-        techs: "Html | CSS",
+        techs: ["Html", "CSS"],
         description: "This fun project showcases the creation of the iconic Sharingan eye from the Naruto anime using only CSS. The video demonstrates how CSS alone can be leveraged to build complex and animated visuals, proving that with creativity and code, you can bring even the most detailed designs to life—purely with frontend magic."
     }
 ]
