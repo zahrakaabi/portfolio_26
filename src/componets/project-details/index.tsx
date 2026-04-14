@@ -42,12 +42,17 @@ function ProjectDetails({ projectId }: ProjectDetailsProps) {
     <main className={styles.projectDetailsContainer}>
       <div className={styles.overlay}></div>
       {projects?.filter((product) => product.$id === projectId)?.map((product) => {
-        const { $id, title_1, title_2, description, image, video } = product;
+        const { $id, title_1, title_2, description, techs, image, video } = product;
         return (
           <div key={$id} className="container">
             <div className={styles.projectdetails}>
               <h1> {title_1}{title_2} </h1>
               <p> {description} </p>
+              <div className={`${styles.techs} flex flex-wrap items-center`}>
+                {techs.map((tech) => <span className={styles.techItem}>
+                  {tech}
+                </span>)}
+              </div>
               <div className={styles.viewWrapper}>
                 <div className="w-fit-content">
                   <Magnetic>

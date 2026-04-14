@@ -6,6 +6,9 @@
 // Packages
 import { useState } from 'react';
 
+// UI Local Components
+import { CtaButton } from '@/shared/components';
+
 // Styles
 import styles from './index.module.scss';
 
@@ -111,8 +114,8 @@ function Contact() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <div className={styles.sendWrapper}>
-                            <button className="animated" type="submit">Send</button>
+                        <div className={`${styles.sendWrapper} w-fit-content`}>
+                            <CtaButton content='Send message' value='send message' />
                         </div>
                         {status && <p>{status}</p>}
                     </form>

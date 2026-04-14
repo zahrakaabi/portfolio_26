@@ -43,7 +43,7 @@ function CtaButton({ link, content, value, selectedFilter, onClick }: CtaButtonP
           <span>{content}</span>
         </Link>
       ) : (
-        <button className={className} value={value} onClick={onClick}>
+        <button className={className} type="submit" value={value} onClick={onClick}>
           <span>{content}</span>
         </button>
       )}

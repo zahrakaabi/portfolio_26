@@ -18,6 +18,19 @@
             padding-left: 2%;
             font: normal 400 1.6rem sans-serif; 
             line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        .techs {
+            gap: 1rem;
+            padding-left: 2%;
+            
+            .techItem {
+                padding: 1rem 2rem;
+                font: normal 400 1.6rem sans-serif; 
+                border: 1px solid rgba(#333, 0.4);
+                border-radius: 5rem;
+            }
         }
 
         .viewWrapper {

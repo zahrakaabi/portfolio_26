@@ -17,10 +17,10 @@ export const projects: ProjectType[] = [
         image: "thunderous.png",
         video: 'thunderous.mp4',
         details: "Design & Build",
-        src:"https://github.com/zahrakaabi/thunderous",
+        src:"https://e-com-thunderous.vercel.app",
         color: "#333",
-        techs: ["React" , "SCSS"],
-        description: "This beauty e-commerce platform offers a seamless shopping experience for makeup, skincare, and perfume products. Built with React and powered by React Query for efficient data fetching, the site supports language switching between French and English. It features a dynamic product catalog with filtering, real-time search, a cart and checkout flow."
+        techs: ["React" , "React Query", "Firebase", "i18n", "Firebase Auth", "SCSS"],
+        description: "A beauty e-commerce platform built with React and Firebase, focusing on scalable state management and polished user interactions. I implemented React Query for efficient data fetching from a custom Firebase API, alongside a custom hook for local pagination and full i18n support (EN/FR). The UI features smooth Framer Motion transitions, hover-tilt effects, and a secure CRUD system for product management."
     },
     {
         $id: "07",
@@ -40,10 +40,10 @@ export const projects: ProjectType[] = [
         image: "moviehype.png",
         video: 'video1.mp4',
         details: "Design & Build",
-        src:"https://github.com/zahrakaabi13/Movie-application-usig-react-js",
+        src:"https://movie-hypee.vercel.app",
         color: "#d8d3cd",
-        techs: ["React", "Node Js"],
-        description: "This movie app, fully designed and developed using React.js and Node.js, offers a seamless experience to browse, search, and manage movies. Users can easily search for movies, add or remove them from their favorites, and access a personalized dashboard with full CRUD (Create, Read, Update, Delete) capabilities for managing movie entries."
+        techs: ["React", "Supabase", "Custom hook", "SCSS", "pwa"],
+        description: 'An interactive movie management platform featuring a Supabase backend and a custom-built API for dynamic content delivery. I refactored the original codebase to improve performance and responsiveness, implementing a secure role-based authentication system that grants admins exclusive CRUD access via a private dashboard. Key features include a "Quick View" discovery modal, a local favorites system, and a robust search functionality for a seamless user experience.'
     },
     {
         $id: "zitouna",
