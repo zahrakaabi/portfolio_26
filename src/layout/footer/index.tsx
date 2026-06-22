@@ -29,8 +29,7 @@ function Footer() {
               <ul>
                 <li><a href='' target='blank'>Dribbble</a></li>
                 <li><a href='' target='blank'>Medium</a></li>
-                <li><a href='' target='blank'>Github 1</a></li>
-                <li><a href='' target='blank'>Github 2</a></li>
+                <li><a href='https://github.com/zahrakaabi' target='blank'>Github</a></li>
                 <li><a href='' target='blank'>LinkedIn</a></li>
               </ul>
             </div>

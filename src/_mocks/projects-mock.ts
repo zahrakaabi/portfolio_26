@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
         title_1: "Thunder",
         title_2: "ous",
         image: "thunderous.png",
-        video: 'thunderous.mp4',
+        video: 'thunderous_.mp4',
         details: "Design & Build",
         src:"https://e-com-thunderous.vercel.app",
         color: "#333",
@@ -49,7 +49,7 @@ export const projects: ProjectType[] = [
         $id: "zitouna",
         title_1: "Zitou",
         title_2: "na",
-        image: "zitouna_bank.png",
+        image: "zitouna.png",
         video: '',
         details: "UI Design",
         src: "",
@@ -82,6 +82,18 @@ export const projects: ProjectType[] = [
         description: "A printed hoodie e-commerce website was fully designed and developed to offer a smooth shopping experience. Built React Js and Node Js, it allows users to browse a variety of hoodie designs, view detailed product pages, and complete purchases."
     },*/
     {
+        $id: "100",
+        title_1: "Habit-",
+        title_2: "tracker",
+        image: "habit-tracker.png",
+        video: "",
+        details: "Development",
+        src: "https://habit-tracker-pr.vercel.app/",
+        color: "#e9eaec",
+        techs: ["React", "Local Storage", "Tailwind CSS"],
+        description: "A habit tracker where users can add habits with custom weekly schedules, mark them as done, and delete them with a live count of completed habits."
+    },
+    {
         $id: "09",
         title_1: "Pomo",
         title_2: "doro",
@@ -89,7 +101,7 @@ export const projects: ProjectType[] = [
         video: 'pomodoro.mp4',
         details: "Development",
         src:"https://zkpomodoro.netlify.app/",
-        color: "#e9eaec",
+        color: "#b1a994",
         techs: ["React", "Local storage"],
         description: 'This Pomodoro timer website is built as a Progressive Web App (PWA), allowing users to install it on their devices for an app-like experience via "Add to Home Screen." It offers a customizable focus session with the ability to choose between three fonts, three color themes, and set custom durations for Pomodoro, short break, and long break sessions. User preferences are saved using local storage, ensuring a personalized and consistent experience across visits.'
     },
@@ -101,7 +113,7 @@ export const projects: ProjectType[] = [
         video: 'ytb clone.mp4',
         details: "Development",
         src:"https://github.com/zahrakaabi/YOUTUBE_CLONE",
-        color: "#b1a994",
+        color: "#e9eaec",
         techs: ["React", "Material UI", "Rapid API"],
         description: "This project is a video streaming platform built with React, Material UI and RapidApi, offering core functionalities such as video playback, search, channel browsing, comments, and recommendations. It features responsive design for optimal viewing across devices, dynamic routing for video and channel pages. Users can enjoy a smooth, intuitive UI that closely mirrors the YouTube experience."
     },
@@ -113,7 +125,7 @@ export const projects: ProjectType[] = [
         video: 'video4.mp4',
         details: "Design & Build",
         src:"https://github.com/zahrakaabi/watchNgo",
-        color: "#dcd0c2",
+        color: "",
         techs: "Vanilla Javscript | Html | CSS",
         description: "Ane-commerce website that sells watches, it was fully designed and developed to offer a smooth shopping experience. Built Vanilla Js no frameworks, it allows users to browse a variety of hoodie designs, view detailed product pages, and complete purchases."
     },*/
@@ -125,7 +137,7 @@ export const projects: ProjectType[] = [
         video: 'sharingan.mp4',
         details: "Development",
         src:"https://github.com/",
-        color: "#e9eaec",
+        color: "#dcd0c2",
         techs: ["Html", "CSS"],
         description: "This fun project showcases the creation of the iconic Sharingan eye from the Naruto anime using only CSS. The video demonstrates how CSS alone can be leveraged to build complex and animated visuals, proving that with creativity and code, you can bring even the most detailed designs to life—purely with frontend magic."
     }
