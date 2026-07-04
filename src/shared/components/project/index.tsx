@@ -54,8 +54,8 @@ function Project({ project }: ProjectProps) {
       onClick={() => route.push(`/work/${$id}`)}>
         <Image className='center'
           src={`/assets/images/projects/${image}`}
-          width={250}
-          height={300}
+          width={350}
+          height={400}
           alt={`${title_1}${title_2}`}   
         />
         {hovered && index === $id && (

@@ -27,10 +27,10 @@ function Footer() {
           <div className={styles.footerCol}>
             <div className={styles.contactLinksList}>
               <ul>
-                <li><a href='' target='blank'>Dribbble</a></li>
-                <li><a href='' target='blank'>Medium</a></li>
                 <li><a href='https://github.com/zahrakaabi' target='blank'>Github</a></li>
                 <li><a href='' target='blank'>LinkedIn</a></li>
+                <li><a href='' target='blank'>Medium</a></li>
+                <li><a href='' target='blank'>Dribbble</a></li>
               </ul>
             </div>
             <div className={styles.contactLinksList}>
