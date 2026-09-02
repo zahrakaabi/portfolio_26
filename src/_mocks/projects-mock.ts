@@ -11,6 +11,18 @@ export const projects: ProjectType[] = [
     //ajouter eskiss
     //add this portfolio
     {
+        $id: "66",
+        title_1: "Admin Dashboard",
+        title_2: "",
+        image: "saas.svg",
+        video: '',
+        details: "Development",
+        src:"https://admin-dashboarrdd.vercel.app/dashboard",
+        color: "#333",
+        techs: ["React", "React-form","Shadcn", "Tailwind css", "Yup", "Apex-charts"],
+        description: "This project is still in progress, with more features on the way, including editing, deletion, and deeper analytics. This is a product management dashboard for browsing, filtering, and adding products with ease. Still in progress, with more features on the way."
+    },
+    {
         $id: "01",
         title_1: "Thunder",
         title_2: "ous",
@@ -18,7 +30,7 @@ export const projects: ProjectType[] = [
         video: 'thunderous_.mp4',
         details: "Design & Build",
         src:"https://e-com-thunderous.vercel.app",
-        color: "#333",
+        color: "#b1a994",
         techs: ["React" , "React Query", "Firebase", "i18n", "Firebase Auth", "SCSS"],
         description: "A beauty e-commerce platform built with React and Firebase, focusing on scalable state management and polished user interactions. I implemented React Query for efficient data fetching from a custom Firebase API, alongside a custom hook for local pagination and full i18n support (EN/FR). The UI features smooth Framer Motion transitions, hover-tilt effects, and a secure CRUD system for product management."
     },
